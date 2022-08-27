@@ -78,7 +78,7 @@ body {
 
 .header__img-wrapper {
  max-width: 300px;
- margin-bottom: 20px;
+ margin-bottom: 40px;
 }
 
 .header__img {
@@ -89,15 +89,25 @@ body {
 }
 
 .header__content {
-  flex-basis: 65%;
+  flex-basis: 60%;
 }
 
 .header__title {
   color: #32afb2;
   font-size: 42px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .header__subtitle {
   color: #313844;
+}
+
+.main__content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+}
+
+.main__content:last-of-type {
+  flex-basis: 60%;
 }
