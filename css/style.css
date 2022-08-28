@@ -86,6 +86,7 @@ body {
 .header__content-wrapper {
   display: flex;
   justify-content: space-between;
+  padding: 10px;
 }
 
 .header__img-wrapper {
@@ -103,6 +104,7 @@ body {
 
 .header__content {
   flex-basis: 60%;
+  padding: 10px;
 }
 
 .header__title {
@@ -121,8 +123,19 @@ body {
   padding-top: 15px;
 }
 
+.main__content {
+  padding: 7px;
+}
+
 .main__content:last-of-type {
   flex-basis: 60%;
+}
+
+.contact,
+.education,
+.languages,
+.certificates {
+margin-bottom: 50px;
 }
 
 .section-title {
@@ -135,7 +148,11 @@ body {
   list-style-type: none;
 }
 
-.contact__item {
+.contact__item,
+.languages__list-item,
+.skills__list-item,
+.certificates__list-item,
+.interests__item {
   margin-bottom: 15px;
 }
 
@@ -158,18 +175,20 @@ body {
 .education__sublist-item {
   margin-bottom: 10px;
 }
-.education__sublist-item--bold {
-  color: #313844;
-  font-weight: 700;
-}
 
 .education__sublist {
   list-style-type: none;
 }
 
-.languages__list-item, 
-.skills__list-item {
-  margin-bottom: 15px;
+.certificate__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.certificate__link:hover,
+.certificate__link:focus,
+.certificate__link:active {
+  color: #32afb2;
 }
 
 .skills {
@@ -184,6 +203,9 @@ body {
 .experience__duties,
 .experience__duties-list-item {
   margin-bottom: 10px;
+}
+.experience__duties {
+  text-decoration: underline;
 }
 
 .experience__job {
