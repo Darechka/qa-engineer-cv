@@ -16,7 +16,7 @@ html {
 
 body {
   font-family: "Raleway", sans-serif;
-  font-size: 16px;
+  font-size: 22px;
   font-style: normal;
   color: #555e70;
   background: #32afb2;
@@ -88,6 +88,7 @@ body {
   border-radius: 50%;
 }
 
+
 .header__content {
   flex-basis: 60%;
 }
@@ -110,4 +111,43 @@ body {
 
 .main__content:last-of-type {
   flex-basis: 60%;
+}
+
+.section-title {
+  color: #313844;
+  margin-bottom: 15px;
+}
+
+.contact__list {
+  list-style-type: none;
+}
+
+.contact__item {
+  margin-bottom: 15px;
+}
+
+.education__list {
+  list-style-type: none;
+}
+
+.education__list-item {
+  margin-bottom: 40px;
+}
+
+.education__list-item-title {
+  color: #32afb2;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.education__sublist-item {
+  margin-bottom: 10px;
+}
+.education__sublist-item--bold {
+  color: #313844;
+  font-weight: 700;
+}
+
+.education__sublist {
+  list-style-type: none;
 }
