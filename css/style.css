@@ -22,6 +22,18 @@ body {
   background: #32afb2;
 }
 
+.azure {
+  color: #32afb2;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.dark-grey {
+  color: #313844;
+}
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -48,7 +60,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  height: 65px;
+  height: 60px;
   list-style-type: none;
 }
 
@@ -115,6 +127,7 @@ body {
 
 .section-title {
   color: #313844;
+  font-size: 30px;
   margin-bottom: 15px;
 }
 
@@ -126,7 +139,8 @@ body {
   margin-bottom: 15px;
 }
 
-.education__list {
+.education__list,
+.languages__list {
   list-style-type: none;
 }
 
@@ -135,8 +149,9 @@ body {
 }
 
 .education__list-item-title {
-  color: #32afb2;
+  font-size: 25px;
   font-weight: 700;
+  color: #32afb2;
   margin-bottom: 10px;
 }
 
@@ -150,4 +165,27 @@ body {
 
 .education__sublist {
   list-style-type: none;
+}
+
+.languages__list-item, 
+.skills__list-item {
+  margin-bottom: 15px;
+}
+
+.skills {
+  margin-bottom: 40px;
+}
+
+.experience__block-wrapper {
+  margin-bottom: 40px;
+}
+
+.experience__company,
+.experience__duties,
+.experience__duties-list-item {
+  margin-bottom: 10px;
+}
+
+.experience__job {
+  margin-bottom: 20px;
 }
