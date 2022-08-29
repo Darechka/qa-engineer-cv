@@ -86,12 +86,12 @@ body {
 .header__content-wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  align-items: center;
+  padding: 10px 10px 40px 10px;
 }
 
 .header__img-wrapper {
  max-width: 300px;
- margin-bottom: 40px;
 }
 
 .header__img {
@@ -115,6 +115,11 @@ body {
 
 .header__subtitle {
   color: #313844;
+  margin-bottom: 30px;
+}
+
+.header__description {
+  line-height: 2rem;
 }
 
 .main__content-wrapper {
@@ -135,7 +140,7 @@ body {
 .education,
 .languages,
 .certificates {
-margin-bottom: 50px;
+margin-bottom: 70px;
 }
 
 .section-title {
@@ -149,10 +154,10 @@ margin-bottom: 50px;
 }
 
 .contact__item,
-.languages__list-item,
-.skills__list-item,
-.certificates__list-item,
-.interests__item {
+.languages__item,
+.skills__item,
+.certificates__item,
+.tools__item {
   margin-bottom: 15px;
 }
 
@@ -161,11 +166,11 @@ margin-bottom: 50px;
   list-style-type: none;
 }
 
-.education__list-item {
+.education__item {
   margin-bottom: 40px;
 }
 
-.education__list-item-title {
+.education__item-title {
   font-size: 25px;
   font-weight: 700;
   color: #32afb2;
@@ -192,7 +197,7 @@ margin-bottom: 50px;
 }
 
 .skills {
-  margin-bottom: 40px;
+  margin-bottom: 70px;
 }
 
 .experience__block-wrapper {
@@ -201,7 +206,7 @@ margin-bottom: 50px;
 
 .experience__company,
 .experience__duties,
-.experience__duties-list-item {
+.experience__duties-item {
   margin-bottom: 10px;
 }
 .experience__duties {
@@ -210,4 +215,25 @@ margin-bottom: 50px;
 
 .experience__job {
   margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 480px) {
+  .header__title {
+    text-align: center;
+    font-size: 38px;
+  }
+  .header__subtitle {
+    text-align: center;
+    font-size: 32px;
+  }
+  .header__content-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main__content-wrapper {
+    flex-direction: column;
+  }
+
+
 }
