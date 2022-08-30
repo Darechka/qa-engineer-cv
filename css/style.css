@@ -150,7 +150,7 @@ body {
 }
 
 .main__content {
-  padding: 7px;
+  padding: 7px 7px 7px 30px;
 }
 
 .main__content:last-of-type {
