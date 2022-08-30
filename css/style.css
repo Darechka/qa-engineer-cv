@@ -161,7 +161,7 @@ body {
 .education,
 .languages,
 .certificates {
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
 
 .section-title {
@@ -176,7 +176,6 @@ body {
 
 .contact__item,
 .languages__item,
-.skills__item,
 .certificates__item,
 .tools__item {
   margin-bottom: 15px;
@@ -218,22 +217,17 @@ body {
   margin-bottom: 70px;
 }
 
-.experience__block-wrapper {
-  margin-bottom: 40px;
-}
-
-.experience__company,
-.experience__duties,
-.experience__duties-item {
-  margin-bottom: 10px;
-}
-
-.experience__duties {
-  text-decoration: underline;
-}
-
-.experience__job {
+.skills__item{
   margin-bottom: 20px;
+}
+
+.experience__description {
+  margin-bottom: 15px;
+}
+
+.experience__item {
+  margin-bottom: 20px;
+  line-height: 2rem;
 }
 
 @media screen and (max-width: 768px) {
