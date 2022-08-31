@@ -223,6 +223,7 @@ body {
 
 .experience__description {
   margin-bottom: 15px;
+  line-height: 2rem;
 }
 
 .experience__item {
