@@ -25,6 +25,11 @@ body {
   color: #313844;
 }
 
+.icon {
+  color: #32afb2;
+  margin-right: 10px;
+}
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -179,6 +184,17 @@ body {
 .certificates__item,
 .tools__item {
   margin-bottom: 15px;
+}
+
+.contact__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.contact__link:hover,
+.contact__link:focus,
+.contact__link:active {
+  color: #32afb2;
 }
 
 .education__list,
