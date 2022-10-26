@@ -147,12 +147,19 @@ body {
 .header__description {
   line-height: 2rem;
 }
+.main__container {
+  border-bottom: 1px solid #32afb2;
+}
 
 .main__content-wrapper {
-  display: flex;
-  justify-content: space-between;
   padding-top: 15px;
 }
+
+.main__content-wrapper--flex {
+  display: flex;
+  justify-content: space-between;
+}
+
 
 .main__content {
   padding: 7px 7px 7px 30px;
@@ -163,9 +170,9 @@ body {
 }
 
 .contact,
-.education,
+.courses,
 .languages,
-.certificates {
+.education {
   margin-bottom: 50px;
 }
 
@@ -179,10 +186,12 @@ body {
   list-style-type: none;
 }
 
-.contact__item,
-.languages__item,
-.certificates__item,
-.tools__item {
+.contact__item {
+  margin-bottom: 20px;
+}
+
+.courses__item,
+.languages__item {
   margin-bottom: 15px;
 }
 
@@ -198,15 +207,19 @@ body {
 }
 
 .education__list,
+.courses__list,
 .education__sublist,
+.courses__sublist,
 .languages__list {
   list-style-type: none;
 }
 
+.courses__item,
 .education__item {
   margin-bottom: 40px;
 }
 
+.courses__item-title,
 .education__item-title {
   font-size: 25px;
   font-weight: 700;
@@ -214,26 +227,29 @@ body {
   margin-bottom: 10px;
 }
 
-.education__sublist-item {
+.courses__sublist-item,
+.education__sublist-item{
   margin-bottom: 10px;
 }
 
-.certificate__link {
+.courses__link {
   text-decoration: none;
   color: inherit;
 }
 
-.certificate__link:hover,
-.certificate__link:focus,
-.certificate__link:active {
+.courses__link:hover,
+.courses__link:focus,
+.courses__link:active {
   color: #32afb2;
 }
 
-.skills {
+.skills,
+.tools {
   margin-bottom: 70px;
 }
 
-.skills__item{
+.skills__item,
+.tools__item{
   margin-bottom: 20px;
 }
 
@@ -347,6 +363,10 @@ body {
   body {
     font-size: 18px;
   }
+
+  .tools {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (max-width: 540px) {
@@ -358,7 +378,11 @@ body {
     font-size: 30px;
   }
 
-  .main__content-wrapper {
+  .main__container {
+    border-bottom: none;
+  }
+
+  .main__content-wrapper--flex {
     flex-direction: column;
   }
 
@@ -367,12 +391,13 @@ body {
   }
 
   .contact,
+  .courses,
   .education,
-  .languages,
-  .certificates {
+  .languages {
     margin-bottom: 40px;
   }
 
+  .courses__item-title,
   .education__item-title {
     font-size: 20px;
   }
